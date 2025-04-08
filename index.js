@@ -39,7 +39,14 @@ console.log(positiveOrNegative(numbers))
 
 
 //Given an array of objects, where each object represents an employee with an id, name, and salary property, write a function that returns a new array of employee objects sorted by their salary in ascending order.
+const employees = [{ name: "Hannah", salary: 2000 }, { name: "Mercy", salary: 1000 }, { name: "Muli", salary: 1800 }, { name: "Max", salary: 900 }]
+function sortEmployeesBySalary(employees) {
 
+    const sortedEmployees = employees.sort((a, b) => a.salary - b.salary);
+
+    return sortedEmployees;
+}
+console.log(sortEmployeesBySalary(employees));
 
 
 //Write a function that accepts an array of numbers and uses the forEach() method to console.log each number multiplied by 2.
